@@ -1,0 +1,203 @@
+ *{ margin: 0px; padding: 0; }
+.navigation{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.compnyname{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav ul li{
+    display: inline-block;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px 5px 20px;
+}
+.nav ul li a:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+.header{
+    background-image: url("img/1.jpg");
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    width: 450px;
+    height: 200px;
+    text-align: center;
+}
+.welcome h1, .welcome p{
+    margin-bottom: 30px;
+}
+.welcome h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.welcome a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+}
+.view{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: none;
+}
+.bosh{
+    display: grid;    
+    grid-template-columns: repeat(4 (col) 2fr);
+    grid-template-rows: repeat(3 (row) 2fr);
+    grid-gap: 40px;
+    text-align: center;
+    margin: 60px 200px;
+    }
+.bosh h2, h3{
+    color: rgb(54, 170, 216);
+    padding: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.now{
+    grid-column: 1/5;
+}
+.not p{
+    color: dimgray;
+}
+.nod p{
+    color: dimgray;
+}
+.non p{
+    color: dimgray;
+}
+
+
+
+
+@media screen and (min-width: 772px) and (max-width: 972px){
+    .welcome{
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 472px) and (max-width: 772px){
+    .welcome{
+        margin-top: -200px;
+    }
+    .welcome h1{
+        font-size: 25px;
+    }
+    .welcome p{
+        font-size: 15px;
+    }
+    .welcome a{
+        font-size: 10px;
+    }
+    .navigation{
+        display: block;
+        height: 100px;
+    }
+    .compnyname{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .compnyname h2{
+        width: 100%;
+        text-align: center;
+    }
+    .nav{
+        margin-top: 20px;
+    }
+    .nav ul{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 472px){
+    .nav{
+        display: none;
+    }
+    .welcome{
+        margin-top: -200px;
+        margin-bottom: 10px;
+        width: 380px;
+    }
+    .welcome h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .welcome p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .welcome a{
+        font-size: 7px;
+    }
+    .view{
+        display: block;
+    }
+    .view:hover{
+        cursor: pointer;
+    }
+    .view:hover {
+        display: block;
+    }
+}
+@media screen and(min-width: 772px) and (max-width: 972px) {
+    .bosh{
+        margin-top: -200px;
+    }    
+}
+@media screen and (min-width: 472px) and (max-width: 772px){
+    .bosh{
+        margin-top: -200px;
+        display: block;
+        height: 200px;
+    }
+    .bosh h2, h3{
+        font-size: 18px;
+    }
+    .bosh p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 472px){
+    .bosh{
+        margin-top: -200px;
+        margin-bottom: 10px;
+        width: 300px;
+        margin-left: 0px;
+        display: block;
+        height: 100px;
+    }
+    .bosh h2, h3{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .bosh p{
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+}
